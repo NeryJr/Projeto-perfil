@@ -18,3 +18,9 @@ a, a:hover {
     text-decoration: none;
     color: unset;
 }
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
