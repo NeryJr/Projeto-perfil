@@ -70,20 +70,21 @@ nav ul li {
 
 .profile-img img {
     width: 150px;
-    padding-bottom: 35px;
 }
 
 .profile-items h2 {
     font-size: 2rem;
+    margin: 35px 0 0 0;
 }
 
 .profile-items p {
     font-size: 1rem;
+    margin: 0;
 }
 
 #portfolio {
     background-color: var(--background-white);
-    padding: 60px;
+    padding-bottom: 40px;
 }
 
 .portfolio-items h2 {
@@ -91,7 +92,7 @@ nav ul li {
     color: var(--color-darkblue);
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 10px
+    padding: 60px 0 10px 0;
 }
 
 .portfolio-img{
@@ -102,7 +103,8 @@ nav ul li {
 }
 
 .portfolio-edit-img {
-    width: calc(33% - 40px);
+    width: calc(100% - 40px);
+    max-width: 280px;
     border-radius: 10px;
     cursor: pointer;
     margin: 20px;
@@ -125,4 +127,38 @@ footer p {
 .social-media-footer img{
     width: 2rem;
     margin: 10px;
+}
+
+@media(min-width: 576px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 768px) {
+    html {
+        font-size: 24px;
+    }
+
+    .portfolio-edit-img {
+        width: 280px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav h1 {
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    nav ul li {
+        font-size: 18px;
+    }
 }
